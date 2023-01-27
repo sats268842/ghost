@@ -113,7 +113,7 @@ RUN set -eux; \
 	rm -rv /tmp/yarn* /tmp/v8*
 
 WORKDIR $GHOST_INSTALL
-VOLUME $GHOST_CONTENT
+# VOLUME $GHOST_CONTENT
 
 COPY docker-entrypoint.sh /usr/local/bin
 ENTRYPOINT ["docker-entrypoint.sh"]
