@@ -10,20 +10,22 @@ ENV BLOG_URL=${BLOG_URL}
 ARG MYSQL_URL
 ENV MYSQL_URL=${MYSQL_URL}
 
+ENV database__client=mysql
+
 ARG MYSQLDATABASE
-ENV MYSQLDATABASE=${MYSQLDATABASE}
+ENV database__connection__database=${MYSQLDATABASE}
 
 ARG MYSQLHOST
-ENV MYSQLHOST=${MYSQLHOST}
+ENV database__connection__host=${MYSQLHOST}
 
 ARG MYSQLPASSWORD
-ENV MYSQLPASSWORD=${MYSQLPASSWORD}
+ENV database__connection__password=${MYSQLPASSWORD}
 
 ARG MYSQLPORT
-ENV MYSQLPORT=${MYSQLPORT}
+ENV database__connection__port=${MYSQLPORT}
 
 ARG MYSQLUSER
-ENV MYSQLUSER=${MYSQLUSER}
+ENV database__connection__user=${MYSQLUSER}
 
 ARG mail__from
 ENV mail__from=${mail__from}
