@@ -61,10 +61,10 @@ RUN set -eux; \
 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; \
 	npm cache clean --force
 
-ENV GHOST_INSTALL .
-# ENV GHOST_INSTALL /var/lib/ghost
-# ENV GHOST_CONTENT /var/lib/ghost/content
-ENV GHOST_CONTENT .
+# ENV GHOST_INSTALL .
+ENV GHOST_INSTALL /var/lib/ghost
+ENV GHOST_CONTENT /var/lib/ghost/content
+# ENV GHOST_CONTENT .
 
 ENV GHOST_VERSION 5.32.0
 
