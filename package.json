@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
-    "ghost": "5.27.0",
+    "ghost": "4.47.4",
     "ghost-storage-cloudinary": "2.2.1",
     "lyra": "github:TryGhost/lyra#main",
-    "mysql2": "3.0.1"
+    "mysql2": "2.3.3"
   },
   "scripts": {
     "start": "bin/create-config && node index.js",
