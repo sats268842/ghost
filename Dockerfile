@@ -25,6 +25,27 @@ ENV MYSQLPORT=${MYSQLPORT}
 ARG MYSQLUSER
 ENV MYSQLUSER=${MYSQLUSER}
 
+ARG mail__from
+ENV mail__from=${mail__from}
+
+ARG mail__options__auth__pass
+ENV mail__options__auth__pass=${mail__options__auth__pass}
+
+ARG mail__options__auth__user
+ENV mail__options__auth__user=${mail__options__auth__user}
+
+ARG mail__options__host
+ENV mail__options__host=${mail__options__host}
+
+ARG mail__options__port
+ENV mail__options__port=${mail__options__port}
+
+ARG mail__options__service
+ENV mail__options__service=${mail__options__service}
+
+ARG mail__transport
+ENV mail__transport=${mail__transport}
+
 RUN apk add --no-cache 'su-exec>=0.2'
 
 RUN apk add --no-cache \
