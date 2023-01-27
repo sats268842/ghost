@@ -1,6 +1,6 @@
 {
   "name": "ghost",
-  "version": "5.33.0",
+  "version": "5.26.0",
   "description": "Deploy Ghost v4 on Railway",
   "main": "index.js",
   "author": "farazpatankar",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
-    "ghost": "5.33.0",
+    "ghost": "5.26.0",
     "ghost-storage-cloudinary": "2.2.1",
     "lyra": "github:TryGhost/lyra#main",
     "mysql2": "3.0.1"
